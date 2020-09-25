@@ -7,7 +7,7 @@ window.handleMealsRequest = async () => {
   <li><a href="/meals" data-navigo>Meals</a>
   <li><a href="/meal/1" data-navigo>Reserve</a>
   <li><a href="/createMeal" data-navigo>Create-Meal</a>
-  <li><a href="/Contact" data-navigo>Contact</a>
+  <li><a href="/contact" data-navigo>Contact</a>
   </ul>
   </div>
   <br/>

@@ -28,6 +28,7 @@ window.handleMealRequest = async (params) => {
 </div>
 
 <h1 class= "title">Reserve Meal </h1>
+<p class = "note" You can change the meal by changing the ID in the URL. Thanks></p>
 <ul class="attach"></ul>`;
   const ul = document.querySelector(".meal");
   const mealsWithId = await fetch(`/api/meals/${params.id}`);
@@ -48,7 +49,7 @@ window.handleMealRequest = async (params) => {
   }
 
   function createReservation() {
-    /* const name = document.getElementById("name");
+    /*const name = document.getElementById("name");
   const phone = document.getElementById("phone");
   const email = document.getElementById("email "); */
 

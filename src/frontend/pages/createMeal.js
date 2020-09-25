@@ -41,16 +41,6 @@ window.handleCreateMealRequest = () => {
 </div>
 
 `;
-  /* const ul = document.querySelector(".meal");
-  const mealsWithId = await fetch(`/api/meals`);
-  const meals = await mealsWithId.json();
-  console.log(meals[0].max_reservation);
-  meals.forEach((meal) => {
-    const mealType = document.createElement("p");
-    mealType.innerHTML = `<h2>Title - ${meal.title}<h2></br> Description:${meal.description}</br> Location:${meal.location}</br> When:${meal.when}</br> max_reservation:${meal.max_reservation} </br> Price:${meal.price}`;
-    ul.appendChild(mealType);
-  });
-  document.body.appendChild(ul); */
 
   //const input = document.querySelector(".userinput");
   const button = document.querySelector("button");
