@@ -10,8 +10,8 @@ const port = process.env.PORT || 3000;
 
 // For week4 no need to look into this!
 // Serve the built client html
-// const buildPath = path.join(__dirname, "./../frontend");
-// app.use(express.static(buildPath));
+const buildPath = path.join(__dirname, "./../frontend");
+app.use(express.static(buildPath));
 
 // // Parse URL-encoded bodies (as sent by HTML forms)
 // app.use(express.urlencoded({ extended: true }));
@@ -26,7 +26,7 @@ app.use("/api", router);
 // For week4 no need to look into this!
 // Ensures that the client router works on reload aswell.
 // Sends all requests back to index.html where the routing lib takes over
-/* app.get("/*", function (req, res) {
+app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname, "./../frontend/index.html"), function (
     err
   ) {
@@ -34,6 +34,6 @@ app.use("/api", router);
       res.status(500).send(err);
     }
   });
-}); */
+});
 
 app.listen(port, () => console.log(`Server listening on port ${port}!`));

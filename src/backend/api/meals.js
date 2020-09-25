@@ -121,6 +121,7 @@ router.delete("/", async (req, res) => {
 const deleteMeal = async ({ body }) => {
   try {
     if (!body.id) {
+      console.log(body);
       throw new HttpError("Bad request", "Id not found", 400);
     }
     return knex("meal")
